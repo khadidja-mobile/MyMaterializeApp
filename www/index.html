@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="shortcut icon" href="images/favicon (8).ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon (8).ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cordova - Khadidja IKHLEF</title>
+</head>
+
+<body id="deviceready">
+  <nav class="white">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">Khadidja IKHLEF</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="pink darken-3 material-icons">format_align_left</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="head-link" href="#index-banner">Révision</a></li>
+        <li><a class="head-link" href="#projects">Futurs Projets</a></li>
+        <li><a class="head-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#index-banner">Rappel</a></li>
+    <li><a href="#projects">Futurs Projet</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+  </ul>
+  <!-- <div id="navbar" class="navbar-fixed scrollspy">
+    <nav class="white">
+      <div class="nav-wrapper container">
+        <div class="container"> <a href="#navbar" class="brand-logo">Logo</a></div>
+
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+
+          <li><a class="head-link" href="#projects">Projects</a></li>
+          <li><a class="head-link" href="#aboutus">About Us</a></li>
+          <li><a class="head-link" href="#contactus">Contact Us</a></li>
+
+        </ul>
+        <ul class="right side-nav" id="mobile-demo">
+          <li><a class="head-link" href="#projects">Projects</a></li>
+          <li><a class="head-link" href="#aboutus">About Us</a></li>
+
+          <li><a class="head-link" href="#contactus">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div> -->
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Développement Web Mobile</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Aujourd'hui, nous avons vu comment installer Android Studio avec Cordova</h5>
+        </div>
+        <div class="row center">
+          <a href="#" class="btn-large waves-effect waves-light purple lighten-1">En savoir plus</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/dream-infrared-meadow-2220-824x550.jpg" alt="Unsplashed background img 2">
+    </div>
+  </div>
+
+
+  <div class="">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center" style="color:#333"><i class="mdi-av-new-releases"></i></h2>
+            <h5 class="center">Installer Android Studio + jdk 1.8 + Gradle</h5>
+            <ul>
+              <p class="light">Configure > SDK Manager. SDK Platforms : Android 11.0 et Android 10.0 </p>
+              <p class="light">SDK Tools : Android SDK build-tools | Android Emulator | Android SDK Platform-Tools |
+                Google Play Licensing Library | Intel x86 Emulator Accelerator</p>
+              <p class="light">Configure > AVD Manager : Pixel 4XL > install Q > API Level 29 Android 10.0 </p>
+              <p>installer et dézipper gradle dans C:\</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center" style="color:#333"><i class="mdi-hardware-cast"></i></h2>
+            <h5 class="center">Variables d'environnement</h5>
+
+            <p class="light">Ajouter : </p>
+            <ul>
+              <li>ANDROID_HOME > <p class="light">C:\Users\userName\AppData\Local\Android\Sdk\</p>
+              </li>
+              <li>ANDROID_SDK_ROOT > <p class="light"> C:\Users\userName\AppData\Local\Android\Sdk\ </p>
+              </li>
+              <li>GRADLE_HOME > <p class="light"> C:\gradle-6.8.3-all\gradle-6.8.3\ </p>
+              </li>
+              <li>JAVA_HOME > <p class="light"> C:\ Program Files\Java\jdk18.0_251\ </p>
+              </li>
+            </ul>
+            <p class="light">Ajouter à la variable path : </p>
+            <ul>
+              <li>Au début : <p class="light"> C:\Program Files\Java\jdk18.0_251\bin\ </p>
+              </li>
+              <li>Puis : <p class="light">C:\Program Files (x86)\Common Files\Oracle\Java\javapath</p>
+              </li>
+              <li>à la fin : <p class="light"> C:\gradle-6.8.3-all\gradle-6.8.3\bin\</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center" style="color:#333"><i class="mdi-hardware-keyboard-alt"></i></h2>
+            <h5 class="center">Session_Cordova >> MyFirstCordovaApp</h5>
+            <p class="light">Créer dossier et cd Session_Cordova </p>
+            <p class="light">Lancer les commandes</p>
+            <ul>
+              <li>npm install -g cordova</li>
+              <li>cordova -v </li>
+              <li>cordova create MyFirstCordovaApp</li>
+              <li>cd MyFirstCordovaApp</li>
+              <li>cordova platform add android --save</li>
+              <li>cordova build android</li>
+              <li>cordova emulate android </li>
+              <li>cordova clean android s'il le faut</li>
+              <li class="danger">désactiver un anti-virus !!!!</li>
+            </ul>
+            <p class="light">config.xml : fichier de configuration</p>
+            <p class="light">
+              Ajouter
+              "< platform name="browser">
+                < /platform>"</p>
+            <p class="light">Cordova platform add browser</p>
+            <p class="light">ou :<br> cordova run browser --target=firefox </p>
+            <p class="light">cordova run</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12" style="color: #333;">Simuler une application sur mobile</h5>
+          <p>à propos tel android >> informations logiciels >> taper è fois sur Numéro de version</p>
+          <p>{} Options de développement => Débogage USB</p>
+          <p> cordova run android</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/1412019519aax7e.jpg" alt="img"></div>
+  </div>
+
+  <div class="container section scrollspy" id="projects">
+    <div class="section">
+      <br>
+      <br>
+      <h4 class="center">Prochaines réalisations</h4>
+      <br>
+      <div class="row">
+        <div class="col s6">
+          <img class="materialboxed responsive-img" data-caption="Description about the work or project"
+            src="images/blur-flowers-nature-471-827x550.jpg">
+        </div>
+        <div class="col s6">
+          <img class="materialboxed responsive-img" data-caption="Description about the work or project"
+            src="images/1415117217bc45x.jpg">
+        </div>
+      </div>
+      <!--row-->
+
+      <div class="row">
+        <div class="col s6">
+          <img class="materialboxed responsive-img" data-caption="Description about the work or project"
+            src="images/1397154567yttyy.jpg">
+        </div>
+        <div class="col s6">
+          <img class="materialboxed responsive-img" data-caption="Description about the work or project"
+            src="images/1399827845b0i1k.jpg">
+        </div>
+      </div>
+      <!--row-->
+
+      <div class="center">
+        <a class="waves-effect waves-light btn purple lighten-1">En savoir plus</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper section scrollspy" id="aboutus">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="center row col s3">
+
+          <h3>apropos de cordova</h3>
+        </div>
+        <div class="center row col s12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam</p>
+          <p>à suivre ....</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/1423255813yuwjj.jpg" alt="img"></div>
+  </div>
+
+
+
+  <div class="container section scrollspy" id="contact">
+    <div class="section">
+      <br>
+      <br>
+      <h2>Contactez-moi</h2>
+
+      <div class="row">
+
+        <form class="col s8">
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="name" type="text" class="validate">
+              <label for="name">Nom</label>
+            </div>
+
+
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <!--row-->
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="message-sub" type="email" class="validate">
+              <label for="message-sub">Objet</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="text_area" class="materialize-textarea"></textarea>
+              <label for="text_area">Message</label>
+            </div>
+          </div>
+
+
+          <div>
+            <a class="waves-effect waves-light btn purple lighten-1">Envoyer Message<i
+                class="mdi-content-send right"></i></a>
+          </div>
+        </form>
+
+        <div class="col s12 m4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam
+          </p>
+          <ul class="share-buttons">
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank"
+                title="Share on Facebook"><img src="images/flat_web_icon_set/inverted/Facebook.png"></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img
+                  src="images/flat_web_icon_set/inverted/Twitter.png"></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img
+                  src="images/flat_web_icon_set/inverted/GooglePlus.png"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer purple lighten-1">
+
+    <div class="footer-copyright">
+      <div class="container">
+        <p>Copyright © Khadidja IKHLEF</p>
+        <p id="date" class="right"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="cordova.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
