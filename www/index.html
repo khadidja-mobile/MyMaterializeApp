@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="msapplication-tap-highlight" content="yes">
   <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
   <!-- CSS  -->
@@ -20,12 +19,13 @@
 <body id="deviceready">
   <nav class="white">
     <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo">Khadidja IKHLEF</a>
+      <a href="index.html" class="brand-logo">Khadidja IKHLEF</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="pink darken-3 material-icons">format_align_left</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="head-link" href="#index-banner">Révision</a></li>
         <li><a class="head-link" href="#projects">Futurs Projets</a></li>
         <li><a class="head-link" href="#contact">Contact</a></li>
+        <li><a class="head-link" href="crud.html">FAKE CRUD JS</a></li>
       </ul>
     </div>
   </nav>
@@ -34,6 +34,7 @@
     <li><a href="#index-banner">Rappel</a></li>
     <li><a href="#projects">Futurs Projet</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="crud.html">FAKE CRUD JS</a></li>
 
   </ul>
   <!-- <div id="navbar" class="navbar-fixed scrollspy">
@@ -65,7 +66,7 @@
         <br><br>
         <h1 class="header center teal-text text-lighten-2">Développement Web Mobile</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Aujourd'hui, nous avons vu comment installer Android Studio avec Cordova</h5>
+          <h5 class="header col s12 light">Lundi 19 Avril 2021, nous avons vu comment installer Android Studio avec Cordova</h5>
         </div>
         <div class="row center">
           <a href="#" class="btn-large waves-effect waves-light purple lighten-1">En savoir plus</a>
@@ -216,14 +217,15 @@
       <div class="container">
         <div class="center row col s3">
 
-          <h3>apropos de cordova</h3>
+          <h3>Mise en place server json</h3>
         </div>
         <div class="center row col s12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam</p>
-          <p>à suivre ....</p>
+          <h4>session_cordova</h4>
+          <p>npm install -g json-server</p>
+          <p>créer personnes.json à la racine du dossier</p>
+          <p>installer postman</p>
+          <p>json-server -p 5557 personnes.json</p>
+          <p>Nouvelle collecttion : GET, POST, PUT, DELETE : http://localhost:5557/personnes </p>
         </div>
 
       </div>

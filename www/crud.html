@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="msapplication-tap-highlight" content="yes">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="shortcut icon" href="images/favicon (8).ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon (8).ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Fake Crud Js</title>
+</head>
+
+<body id="deviceready">
+
+    <nav class="white">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo">Home</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                    class="pink darken-3 material-icons">format_align_left</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="head-link" href="index.html#index-banner">Révision</a></li>
+                <li><a class="head-link" href="index.html#projects">Futurs Projets</a></li>
+                <li><a class="head-link" href="index.html#contact">Contact</a></li>
+                <li><a class="head-link" href="#">FAKE CRUD JS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html#index-banner">Rappel</a></li>
+        <li><a href="index.html#projects">Futurs Projet</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#">FAKE CRUD</a></li>
+    </ul>
+
+    <div class="container">
+        <h4>FaKe Crud Js</h4>
+        <br>
+        <!--JavaScript:void(0) pour éviter le chargement de la page-->
+        <form action="JavaScript:void(0)" method="post" onSubmit="app.add()">
+            <input type="text" id="add-name" placeholder="Nouveau Pays">
+            <input type="submit" value="Ajouter" class="btn waves-effect waves-light purple">
+        </form>
+
+        <div id="spoiler" role="aria-hidden" hidden>
+            <form action="JavaScript:void(0)" method="post" id="saveEdit">
+                <input type="text" id="edit-name">
+                <input type="submit" value="Mettre à jour" class="btn waves-effect waves-light green darken-4">
+                <a onclick="closeInput()" aria-label="close">&#10006;</a>
+            </form>
+        </div>
+        <br>
+        <p id="counter"></p>
+
+        <table>
+            <tr>
+                <th>Nom</th>
+            </tr>
+            <tbody id="contries">
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="page-footer purple lighten-1">
+
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Copyright © [KI] Page CRUD JS</p>
+                <p id="date" class="right"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cordova.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/crud.js"></script>
+
+</body>
+
+</html>
