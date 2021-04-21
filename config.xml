@@ -8,7 +8,9 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <icon src="www/img/iconldpi.png" density="ldpi" />
     <content src="crud.html" />
+    <content src="crud2.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

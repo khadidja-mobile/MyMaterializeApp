@@ -1,7 +1,7 @@
 // Crud = Create, read, update, delete
 var app = new function () {
 
-    this.el = document.getElementById('contries');
+    this.el = document.getElementById('countries');
     //this.countries = [];
 
     this.countries = ['France', 'Germnay', 'England', 'Russie', 'Madagascar'];
@@ -37,7 +37,6 @@ var app = new function () {
                 data += '<td><button class="btn red darken-4 waves-effect waves-light" onclick="app.delete(' + i + ')">Delete <i class="material-icons">delete</i></button></td>';
                 data += '</tr>';
             }
-
             return this.el.innerHTML = data;
         } else {
             return this.el.innerHTML = "Insérer un nouveau pays";
@@ -113,7 +112,6 @@ var app = new function () {
 }
 
 app.fetchAll();
-//app.add();
 
 function closeInput() {
     document.getElementById('spoiler').style.display = 'none';

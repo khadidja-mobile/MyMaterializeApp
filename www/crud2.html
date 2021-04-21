@@ -11,14 +11,15 @@
     <!-- CSS  -->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="shortcut icon" href="images/favicon (8).ico" type="image/x-icon">
     <link rel="icon" href="images/favicon (8).ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Fake Crud Js</title>
 </head>
 
-<body id="deviceready">
 
+<body id="deviceready">
     <nav class="white">
         <div class="nav-wrapper container">
             <a href="index.html" class="brand-logo">Home</a>
@@ -28,8 +29,8 @@
                 <li><a href="index.html#index-banner">Révision</a></li>
                 <li><a href="index.html#projects">Futurs Projets</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="#">FAKE CRUD JS</a></li>
-                <li><a href="crud2.html">CRUD 2</a></li>
+                <li><a href="crud.html">FAKE CRUD JS</a></li>
+                <li><a href="#">CRUD 2</a></li>
             </ul>
         </div>
     </nav>
@@ -38,57 +39,48 @@
         <li><a href="index.html#index-banner">Rappel</a></li>
         <li><a href="index.html#projects">Futurs Projet</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="#">CRUD JS</a></li>
-        <li><a href="crud2.html">CRUD 2</a></li>
+        <li><a href="crud.html">CRUD JS</a></li>
+        <li><a href="#">CRUD 2</a></li>
     </ul>
-
     <div class="container">
-        <h4>FaKe Crud Js</h4>
-        <br>
-        <!--JavaScript:void(0) pour éviter le chargement de la page-->
-        <form action="JavaScript:void(0)" method="post" onSubmit="app.add()">
-            <input type="text" id="add-name" placeholder="Nouveau Pays">
-            <input type="submit" value="Ajouter" class="btn waves-effect waves-light purple">
-        </form>
-
-        <div id="spoiler" role="aria-hidden" hidden>
-            <form action="JavaScript:void(0)" method="post" id="saveEdit">
-                <input type="text" id="edit-name">
-                <input type="submit" value="Mettre à jour" class="btn waves-effect waves-light green darken-4">
-                <a onclick="closeInput()" aria-label="close">&#10006;</a>
-            </form>
-        </div>
-        <br>
-        <p id="counter"></p>
-
-        <table>
-            <tr>
-                <th>Nom</th>
-            </tr>
-            <tbody id="countries">
-
-            </tbody>
-        </table>
-    </div>
-
-    <footer class="page-footer purple lighten-1">
-
-        <div class="footer-copyright">
-            <div class="container">
-                <p>Copyright © [KI] Page CRUD JS</p>
-                <p id="date" class="right"></p>
+        <!-- <div id="personSearchPanel">
+            <h4>CRUD</h4>
+            <button id="findButton" class="btn waves-effect waves-light light-purple">Afficher</button>
+            <button id="newButton" class="btn waves-effect waves-light light-blue">Ajouter</button>
+            <br>
+            <div id="personListPanel">
+                <ul id="personList"></ul>
+            </div>
+        </div> -->
+         <div id="personSearchPanel">
+            <h4>CRUD</h4>
+            <button id="findButton" class="btn waves-effect waves-light light-purple">Afficher</button>
+            <button id="newButton" class="btn waves-effect waves-light light-blue">Ajouter</button>
+            <br>
+            <div id="personListPanel">
+                <ul id="personList"></ul>
             </div>
         </div>
-    </footer>
-
-    <script src="cordova.js"></script>
+        <div id="personDetailsPanel">
+            <h5>Edit</h5>
+            <input type="hidden" id="id"><br>
+            <input type="text" id="nom"><br>
+            <input type="text" id="prenom"><br>
+            <br><br><br>
+            <div>
+                <button id="backtoSearchButton" class="btn waves-effect waves-light green">Retour</button>
+                <button id="saveButton" class="btn waves-effect waves-light blue">Enregistrer</button>
+                <button id="deleteButton" class="btn waves-effect waves-light red">Supprimer</button>
+            </div>
+        </div>
+    </div>
+   
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="cordova.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/materialize.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/crud.js"></script>
-    
+    <script src="js/crud2.js"></script> 
 
 </body>
 
