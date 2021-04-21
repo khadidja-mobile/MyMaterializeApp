@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
-    "cordova-android": "9.1.0"
+    "cordova-android": "9.1.0",
+    "json-server": "^0.16.3"
   }
 }
