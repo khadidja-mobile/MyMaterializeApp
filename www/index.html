@@ -288,9 +288,19 @@
         </form>
 
         <div class="col s12 m4">
+          <h5>Ajouter le Splash Screen</h5>
+          <h6>Ajouter dans  < platform name="android">< /platform> dans le fichier config.xml</h6>
+          < preference name="SplashScreenDelay" value="6000" />
+          < preference name="SplashMaintainAspectRatio" value="true" />
+          < preference name="ShowSplashScreenSpinner" value="false" />
+          < splash src="res/screen/android/screenhdpi.png" density="port-hdpi"/>
+          < splash src="res/screen/android/screenxldpi.png" density="port-ldpi"/>
+          < splash src="res/screen/android/screenmdpi.png" density="port-mdpi"/>
+          < splash src="res/screen/android/screenxxxhdpi.png" density="port-ldpi"/>
+          < splash src="res/screen/android/screenxxhdpi.png" density="port-mdpi"/>
+          < splash src="res/screen/android/screenxhdpi.png" density="port-xhdpi"/>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam
+            cordova plugin add cordova-plugin-splashscreen
           </p>
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank"
