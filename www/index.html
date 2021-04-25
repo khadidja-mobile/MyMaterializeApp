@@ -302,6 +302,17 @@
           <p>
             cordova plugin add cordova-plugin-splashscreen
           </p>
+
+          <h5>Ajouter plugin camera</h5>
+          <p>cordova plugin add cordova-plugin-camera</p>
+
+          <h5>Signer son application</h5>
+          <p>keytool -genkey -v -keystore myfirstcordovaapp.keystore -alias myfirstcordovaapp -validity 10000</p>
+          <p>keytool -genkey -v -keystore myfirstcordovaapp.keystore -alias mycordovamaterilizeapp -validity 10000</p>
+          <p>Créer un buil.json à la racine puis ajouter les mots de passes</p>
+          <p>Lancer la commande : cordova build android --release --buildConfig</p>
+          <h6>chemin de l'apk : </h2>
+          <p>C:\Users\KHADIDJA\Desktop\session_Cordova\MyMaterializeApp\platforms\android\app\build\outputs\apk\release\app-release-unsignedk\release\app-release-unsigned.apk</p>
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank"
                 title="Share on Facebook"><img src="images/flat_web_icon_set/inverted/Facebook.png"></a></li>
@@ -312,6 +323,19 @@
           </ul>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    
+  </div>
+  <div class="card horizontal">
+    <div class="card-stacked">
+      <div class="card-content">
+        <h4>Camera plugin</h4>
+        <button id="cameraTakePicture">Take picture !</button>
+        <img id="myImage" style="width:40%;margin-left: auto;margin-right: auto;">
       </div>
     </div>
   </div>
@@ -333,6 +357,30 @@
   <script src="js/materialize.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+  <script>
+    document.addEventListener("deviceready", function () {
+
+      document.getElementById("cameraTakePicture").addEventListener("click", cameraTakePicture);
+
+    }, false);
+
+    function cameraTakePicture() {
+      navigator.camera.getPicture(onSuccess, onFail, {
+        quality: 50,
+        destinationType: Camera.DestinationType.DATA_URL
+      });
+      function onSuccess(imageData) {
+        var image = document.getElementById('myImage');
+        image.src = "data:image/jpeg;base64," + imageData;
+      }
+      function onFail(message) {
+        alert('Failed because: ' + message);
+      }
+    }
+
+    // onsuccess read images
+  </script>
 
 </body>
 

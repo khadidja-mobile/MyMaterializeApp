@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./mymaterializeapp.keystore",
+            "storePassword": "khadidja",
+            "alias": "mymaterializeapp",
+            "password" : "8",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "./mymaterializeapp.keystore",
+            "storePassword": "khadidja",
+            "alias": "mymaterializeapp",
+            "password" : "khadidja",
+            "keystoreType": "jks"
+        }
+    }
+}
